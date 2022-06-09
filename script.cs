@@ -11,10 +11,13 @@ const string ROTOR_BREAK_TAG = "[QP-RS]";
 const string d = "Displacement";
 const float p = 20 f;
 const float b = -40 f;
+
 Vector3D n, t;
+
 public Program() {
   Runtime.UpdateFrequency = UpdateFrequency.Update1;
 }
+
 public void Main(string argument, UpdateType updateSource) {
   var c = new List < IMyTerminalBlock > ();
   GridTerminalSystem.SearchBlocksOfName(CAPTAIN_COCKPIT_TAG, c);

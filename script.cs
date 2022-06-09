@@ -5,7 +5,7 @@
 // ======================================================= */
 
 const string CAPTAIN_COCKPIT_TAG = "[QP-CC]";
-const string ROTORW_PUSH_TAG = "[QP-RW]";
+const string ROTOR_PUSH_TAG = "[QP-RW]";
 const string ROTOR_BREAK_TAG = "[QP-RS]";
 
 const string d = "Displacement";
@@ -19,7 +19,7 @@ public void Main(string argument, UpdateType updateSource) {
   var c = new List < IMyTerminalBlock > ();
   GridTerminalSystem.SearchBlocksOfName(CAPTAIN_COCKPIT_TAG, c);
   var w = new List < IMyTerminalBlock > ();
-  GridTerminalSystem.SearchBlocksOfName(ROTORW_PUSH_TAG, w);
+  GridTerminalSystem.SearchBlocksOfName(ROTOR_PUSH_TAG, w);
   var s = new List < IMyTerminalBlock > ();
   GridTerminalSystem.SearchBlocksOfName(ROTOR_BREAK_TAG, s);
   Vector3D v = new Vector3D();
